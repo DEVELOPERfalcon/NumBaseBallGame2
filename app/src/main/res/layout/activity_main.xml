@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ball1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty"/>
+
+            <Button
+                android:id="@+id/remove1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제거"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ball2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty"/>
+
+            <Button
+                android:id="@+id/remove2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제거"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ball3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty"/>
+
+            <Button
+                android:id="@+id/remove3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제거"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승부"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_above="@id/linear2"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/zero_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballzero"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/one_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballone"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/two_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/balltwo"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/three_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballthree"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/four_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballfour"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/five_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballfive"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/six_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballsix"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/seven_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballseven"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/eight_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/balleight"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/nine_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ballnine"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
